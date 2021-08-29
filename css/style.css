@@ -27,3 +27,10 @@ img {
   max-width: 800px;
   margin: 0 1.25rem;
 }
+
+.slide {
+                      /* changing the first number the slide effect occurs
+                      to do this, mouse movement and click events can be used as
+                      a guide to change its value */
+  transform: translate3d(0, 0, 0, 0);
+}
