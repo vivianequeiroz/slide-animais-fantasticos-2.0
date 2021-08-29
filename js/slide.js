@@ -71,7 +71,21 @@ export default class Slide {
         element,
       };
     });
-    console.log(this.slideArray);
+  }
+
+  slidesIndexNav(index) {
+    const last = this.slideArray.length - 1;
+    this.index = {
+      prev: index ? index - 1 : null,
+      active: 0,
+      next: index === last ? null : index + 1,
+    };
+  }
+
+  changeSlide(index) {
+    this.moveSlide(this.slideArray[index].position);
+    this.slidesIndexNav(index);
+    console.log(this.index);
   }
 
   init() {
