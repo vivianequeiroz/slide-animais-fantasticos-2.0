@@ -21,11 +21,27 @@ img {
   display: flex;
 }
 
+/* To improve performance */
+.slide:hover {
+  will-change: transform;
+}
+
 .slide li {
   flex-shrink: 0;
   width: 80vw;
   max-width: 800px;
   margin: 0 1.25rem;
+
+  overflow: hidden;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.4);
+  opacity: .8;
+  transform: scale(.8);
+  transition: .4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /*slide {
@@ -34,3 +50,4 @@ img {
                       a guide to change its value 
   transform: translate3d(-500px, 0, 0, 0);
 }*/
+
