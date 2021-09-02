@@ -33,7 +33,6 @@ img {
   margin: 0 1.25rem;
 
   overflow: hidden;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
   opacity: 0.8;
   transform: scale(0.8);
   transition: 0.4s;
